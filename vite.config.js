@@ -3,15 +3,15 @@ import react from "@vitejs/plugin-react-swc";
 import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
-              plugins: [react(), svgr()],
+                  plugins: [react(), svgr()],
       resolve: {
-          alias: {
+            alias: {
                   src: '/src',
-            components: '/src/components',
-          pages: '/src/pages',
-          assets: '/src/assets'
+              components: '/src/components',
+              pages: '/src/pages',
+                assets: '/src/assets'
         },
       },
-      base: '/react_vite/',
+            base: '/react_vite/',
 });
     
