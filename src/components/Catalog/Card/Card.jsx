@@ -2,8 +2,8 @@ import { useSelector } from "react-redux";
 import {
     CardImg,
     CatalogCard,
-    LoadMoreButton,
-    LoadMoreSpan,
+    LearnMoreButton,
+    LearnMoreSpan,
 } from "./Card.styled";
 import { selectAdverts } from "../../../redux/catalog/selectors";
 
@@ -25,9 +25,9 @@ export const Card = ({ item }) => {
             <CardImg src={img} />
             <h2>Buick Enclave, 2008 $40</h2>
             <p>Subscription|Subscription</p>
-            <LoadMoreButton>
-                <LoadMoreSpan>Learn more</LoadMoreSpan>
-            </LoadMoreButton>
+            <LearnMoreButton>
+                <LearnMoreSpan>Learn more</LearnMoreSpan>
+            </LearnMoreButton>
         </CatalogCard>
     );
 };

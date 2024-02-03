@@ -6,7 +6,7 @@ export const CatalogCard = styled.div`
     height: 426px;
 `;
 
-export const LoadMoreButton = styled.button`
+export const LearnMoreButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@ export const LoadMoreButton = styled.button`
     background-color: #3470ff;
 `;
 
-export const LoadMoreSpan = styled.span`
+export const LearnMoreSpan = styled.span`
     font-weight: 600;
     font-size: 14px;
     line-height: 1.42857;
