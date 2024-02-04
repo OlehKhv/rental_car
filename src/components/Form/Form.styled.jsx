@@ -31,6 +31,12 @@ export const InputFrom = styled.input`
     font-size: 18px;
     line-height: 1.11111;
     color: #121417;
+    &::placeholder {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.11111;
+        color: #121417;
+    }
 `;
 
 export const InputTo = styled.input`
@@ -44,6 +50,12 @@ export const InputTo = styled.input`
     line-height: 1.11111;
     color: #121417;
     margin-right: 18px;
+    &::placeholder {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.11111;
+        color: #121417;
+    }
 `;
 
 export const SearchButton = styled.button`

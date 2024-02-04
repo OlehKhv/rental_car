@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CatalogCard = styled.div`
+export const CatalogCard = styled.li`
     width: 274px;
     height: 450px;
     border-radius: 14px 14px 12px 12px;

@@ -27,6 +27,7 @@ export const Modal = ({ advert, toggleModal }) => {
 
     const address = advert.address.split(",");
     const price = advert.rentalPrice.slice(1, advert.rentalPrice.length);
+    const mileage = advert.mileage.toLocaleString("en-IN");
 
     useEffect(() => {
         const handlePressEsc = () => {
@@ -104,9 +105,7 @@ export const Modal = ({ advert, toggleModal }) => {
                             </ConditionsText>
                             <ConditionsText>
                                 Mileage:{" "}
-                                <ConditionsSpan>
-                                    {advert.mileage}
-                                </ConditionsSpan>
+                                <ConditionsSpan>{mileage}</ConditionsSpan>
                             </ConditionsText>
                             <ConditionsText>
                                 Price: <ConditionsSpan>{price}$</ConditionsSpan>

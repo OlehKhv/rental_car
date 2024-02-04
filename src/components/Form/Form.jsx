@@ -20,7 +20,6 @@ export const Form = () => {
     const stylesSelectMakes = {
         control: (styles) => ({
             ...styles,
-            display: "flex",
             alignContent: "center",
             backgroundColor: "#f7f7fb",
             border: "none",
@@ -30,15 +29,26 @@ export const Form = () => {
             padding: "14px 14px 14px 18px",
             marginRight: 18,
         }),
-        option: (styles) => ({ ...styles, color: "red" }),
+        option: (styles, state) => ({
+            ...styles,
+            fontWeight: 500,
+            fontSize: "16px",
+            lineHeight: 1.25,
+            color: state.isFocused ? "#121417" : "rgba(18, 20, 23, 0.2)",
+        }),
         input: (styles) => ({ ...styles }),
-        placeholder: (styles) => ({ ...styles }),
+        placeholder: (styles) => ({
+            ...styles,
+            color: "#121417",
+            fontWeight: 500,
+            fontSize: "18px",
+            lineHeight: 1.11111,
+        }),
         singleValue: (styles) => ({ ...styles }),
     };
     const stylesSelectPrice = {
         control: (styles) => ({
             ...styles,
-            display: "flex",
             alignContent: "center",
             backgroundColor: "#f7f7fb",
             border: "none",
@@ -48,9 +58,21 @@ export const Form = () => {
             padding: "14px 14px 14px 18px",
             marginRight: 18,
         }),
-        option: (styles) => ({ ...styles, color: "red" }),
+        option: (styles, state) => ({
+            ...styles,
+            fontWeight: 500,
+            fontSize: "16px",
+            lineHeight: 1.25,
+            color: state.isFocused ? "#121417" : "rgba(18, 20, 23, 0.2)",
+        }),
         input: (styles) => ({ ...styles }),
-        placeholder: (styles) => ({ ...styles }),
+        placeholder: (styles) => ({
+            ...styles,
+            color: "#121417",
+            fontWeight: 500,
+            fontSize: "18px",
+            lineHeight: 1.11111,
+        }),
         singleValue: (styles) => ({ ...styles }),
     };
 

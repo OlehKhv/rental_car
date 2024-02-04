@@ -4,7 +4,6 @@ import "normalize.css";
 export const AppWrapper = styled.div`
     width: 100vw;
     height: 100%;
-    background-color: #fff;
 `;
 
 export const Container = styled.div`

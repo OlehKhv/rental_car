@@ -35,6 +35,8 @@ export const Card = ({ advert }) => {
 
     const price = advert.rentalPrice.slice(1, advert.rentalPrice.length);
     const address = advert.address.split(",");
+    const img = advert.img ? advert.img : advert.photoLink;
+
     const toggleModal = () => {
         setIsShowModal((prev) => !prev);
     };
@@ -54,7 +56,7 @@ export const Card = ({ advert }) => {
             <CatalogCard>
                 <CardImg
                     style={{
-                        backgroundImage: `linear-gradient(180deg, #121417 0%, rgba(18, 20, 23, 0) 100%), url(${advert.img})`,
+                        backgroundImage: `url(${img})`,
                     }}
                 />
                 <CardLargeTextContainer>

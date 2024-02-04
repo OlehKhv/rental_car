@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
@@ -11,7 +11,7 @@ export const Navigation = styled.nav`
     align-items: center;
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledNavLink = styled(NavLink)`
     padding: 8px 16px;
     color: #ffffff;
     font-weight: 600;
@@ -28,7 +28,8 @@ export const StyledLink = styled(Link)`
         text-shadow 0.3s;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &.active {
         color: #3470ff;
         text-shadow:
             0 0 5px #3470ff,
