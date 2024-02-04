@@ -25,6 +25,9 @@ export const Modal = ({ advert, toggleModal }) => {
         e.stopPropagation();
     };
 
+    const conditions = advert.rentalConditions.split("\n");
+    const conditionsAgeDescr = conditions[0].slice(0, -2);
+    const conditionsMinimumAge = conditions[0].slice(-2, conditions[0].length);
     const address = advert.address.split(",");
     const price = advert.rentalPrice.slice(1, advert.rentalPrice.length);
     const mileage = advert.mileage.toLocaleString("en-IN");
@@ -92,17 +95,15 @@ export const Modal = ({ advert, toggleModal }) => {
                         <DescriptionTitle>Rental Conditions:</DescriptionTitle>
                         <div>
                             <ConditionsText>
-                                Minimum age :{" "}
-                                <ConditionsSpan>25</ConditionsSpan>
+                                {conditionsAgeDescr}
+                                <ConditionsSpan>
+                                    {conditionsMinimumAge}
+                                </ConditionsSpan>
                             </ConditionsText>
-                            <ConditionsText>
-                                Valid driver’s license
-                            </ConditionsText>
+                            <ConditionsText>{conditions[1]}</ConditionsText>
                         </div>
                         <div>
-                            <ConditionsText>
-                                Security deposite required
-                            </ConditionsText>
+                            <ConditionsText>{conditions[2]}</ConditionsText>
                             <ConditionsText>
                                 Mileage:{" "}
                                 <ConditionsSpan>{mileage}</ConditionsSpan>
