@@ -14,6 +14,13 @@ export const Overlay = styled("div")`
     overflow: hidden;
 `;
 
+export const LineIconWrapper = styled.svg`
+    margin-left: 6px;
+    margin-right: 6px;
+    width: 2px;
+    height: 16px;
+    stroke: rgba(18, 20, 23, 0.1);
+`;
 export const Popup = styled("div")`
     position: relative;
     padding: 40px;
@@ -59,17 +66,14 @@ export const ModalLargeTextSpan = styled("span")`
     color: #3470ff;
 `;
 
-export const Span = styled("span")`
-    margin-left: 6px;
-    margin-right: 6px;
-    color: rgba(18, 20, 23, 0.1);
-`;
-
 export const OptionsTop = styled("div")`
     margin-bottom: 14px;
 `;
 
 export const OptionsText = styled("p")`
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     font-size: 12px;
     line-height: 1.5;
     color: rgba(18, 20, 23, 0.5);

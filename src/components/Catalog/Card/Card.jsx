@@ -1,5 +1,5 @@
 import { Modal } from "../../Modal/Modal";
-import { OptionsText, Span } from "../../Modal/Modal.styled";
+import { LineIconWrapper, OptionsText } from "../../Modal/Modal.styled";
 import {
     AddFavoriteBtn,
     AddFavoriteBtnIcon,
@@ -69,17 +69,23 @@ export const Card = ({ advert }) => {
                 </CardLargeTextContainer>
                 <OptionsText>
                     {address[1]}
-                    <Span>|</Span>
+                    <LineIconWrapper>
+                        <use href={`${sprite}#icon-line`} />
+                    </LineIconWrapper>
                     {address[2]}
-                    <Span>|</Span>
+                    <LineIconWrapper>
+                        <use href={`${sprite}#icon-line`} />
+                    </LineIconWrapper>
                     {advert.rentalCompany}
-                    <Span>|</Span>
+                    <LineIconWrapper>
+                        <use href={`${sprite}#icon-line`} />
+                    </LineIconWrapper>
                     {advert.type}
-                    <Span>|</Span>
-                    {advert.model}
-                    <Span>|</Span>
-                    {advert.id}
-                    <Span>|</Span>
+                    <LineIconWrapper>
+                        {advert.model}
+                        <use href={`${sprite}#icon-line`} />
+                        {advert.id}
+                    </LineIconWrapper>
                     {advert.functionalities[0]}
                 </OptionsText>
                 <LearnMoreButton onClick={toggleModal}>

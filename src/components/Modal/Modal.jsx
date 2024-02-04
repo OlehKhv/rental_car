@@ -5,6 +5,7 @@ import {
     ConditionsText,
     DescriptionText,
     DescriptionTitle,
+    LineIconWrapper,
     ModalImg,
     ModalLargeText,
     ModalLargeTextSpan,
@@ -14,7 +15,6 @@ import {
     Overlay,
     Popup,
     RentalCarLink,
-    Span,
 } from "./Modal.styled";
 import { useEffect } from "react";
 import sprite from "../../assets/images/sprite.svg";
@@ -60,15 +60,29 @@ export const Modal = ({ advert, toggleModal }) => {
                     <OptionsTop>
                         <OptionsText>
                             {address[1]}
-                            <Span>|</Span>
+                            <LineIconWrapper>
+                                <use href={`${sprite}#icon-line`} />
+                            </LineIconWrapper>
                             {address[2]}
-                            <Span>|</Span>Id: {advert.id}
-                            <Span>|</Span>Year: {advert.year}
-                            <Span>|</Span>Type: {advert.type}
+                            <LineIconWrapper>
+                                <use href={`${sprite}#icon-line`} />
+                            </LineIconWrapper>
+                            Id: {advert.id}
+                            <LineIconWrapper>
+                                <use href={`${sprite}#icon-line`} />
+                            </LineIconWrapper>
+                            Year: {advert.year}
+                            <LineIconWrapper>
+                                <use href={`${sprite}#icon-line`} />
+                            </LineIconWrapper>
+                            Type: {advert.type}
                         </OptionsText>
                         <OptionsText>
                             Fuel Consumption: {advert.fuelConsumption}
-                            <Span>|</Span>Engine Size: {advert.engineSize}
+                            <LineIconWrapper>
+                                <use href={`${sprite}#icon-line`} />
+                            </LineIconWrapper>
+                            Engine Size: {advert.engineSize}
                         </OptionsText>
                     </OptionsTop>
                     <DescriptionText>{advert.description}</DescriptionText>
@@ -78,16 +92,24 @@ export const Modal = ({ advert, toggleModal }) => {
                         </DescriptionTitle>
                         <OptionsText>
                             {advert.accessories[0]}
-                            <Span>|</Span>
+                            <LineIconWrapper>
+                                <use href={`${sprite}#icon-line`} />
+                            </LineIconWrapper>
                             {advert.accessories[1]}
-                            <Span>|</Span>
+                            <LineIconWrapper>
+                                <use href={`${sprite}#icon-line`} />
+                            </LineIconWrapper>
                             {advert.accessories[2]}
                         </OptionsText>
                         <OptionsText>
                             {advert.functionalities[0]}
-                            <Span>|</Span>
+                            <LineIconWrapper>
+                                <use href={`${sprite}#icon-line`} />
+                            </LineIconWrapper>
                             {advert.functionalities[1]}
-                            <Span>|</Span>
+                            <LineIconWrapper>
+                                <use href={`${sprite}#icon-line`} />
+                            </LineIconWrapper>
                             {advert.functionalities[2]}
                         </OptionsText>
                     </OptionsMiddle>
