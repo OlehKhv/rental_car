@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import SharedLayout from "components/SharedLayout/SharedLayout";
-import ErrorPage from "pages/ErrorPage/ErrorPage";
-import HomePage from "./pages/HomePage/HomePage";
-import FavoritesPage from "./pages/FavoritesPage/FavoritesPage";
-import CatalogPage from "./pages/CatalogPage/CatalogPage";
+import { lazy } from "react";
 
-// const test = import.meta.env.VITE_API_TEST;
+const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
+const CatalogPage = lazy(() => import("./pages/CatalogPage/CatalogPage"));
+const FavoritesPage = lazy(() => import("./pages/FavoritesPage/FavoritesPage"));
+const ErrorPage = lazy(() => import("./pages/ErrorPage/ErrorPage"));
 
 function App() {
     return (

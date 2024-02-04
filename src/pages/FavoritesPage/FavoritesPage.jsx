@@ -1,11 +1,10 @@
 import { FavoritesList } from "../../components/FavoritesList/FavoritesList";
-import { SectionCatalog } from "../CatalogPage/CatalogPage.styled";
 
 const FavoritesPage = () => {
     return (
-        <SectionCatalog>
+        <section>
             <FavoritesList />
-        </SectionCatalog>
+        </section>
     );
 };
 

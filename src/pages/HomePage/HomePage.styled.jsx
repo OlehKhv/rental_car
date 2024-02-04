@@ -1,25 +1,51 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 500px;
+    padding-top: 40px;
 `;
 
 export const Title = styled.h1`
-    margin: 0;
-    margin-right: 10px;
-    color: #ffffff;
-    text-shadow:
-        0 0 5px #00baff,
-        0 0 10px #00baff,
-        0 0 20px #00baff,
-        0 0 40px #00baff,
-        0 0 80px #00baff;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.5;
+    color: #121417;
+    margin-bottom: 50px;
+    color: #3470ff;
+    text-align: center;
 `;
-export const StyledImage = styled.img`
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
+
+export const Text = styled.p`
+    font-size: 16px;
+    line-height: 1.5;
+    color: #121417;
+    margin-bottom: 24px;
+`;
+
+export const List = styled.ul`
+    list-style-position: outside;
+    list-style-type: disc;
+`;
+
+export const TitleSecond = styled.h2`
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.5;
+    color: #121417;
+    margin-bottom: 34px;
+`;
+
+export const TitleThird = styled.h3`
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #121417;
+    margin-bottom: 24px;
+`;
+
+export const TitleFourth = styled.h4`
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #121417;
+    margin-bottom: 24px;
 `;

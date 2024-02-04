@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Catalog } from "../../components/Catalog/Catalog";
 import { Form } from "../../components/Form/Form";
-import { SectionCatalog } from "./CatalogPage.styled";
 import {
     getAdverts,
     getAllAdverts,
@@ -39,11 +38,11 @@ const CatalogPage = () => {
     const isShowBtn = page < pages;
 
     return (
-        <SectionCatalog>
+        <section>
             <Form />
             <Catalog />
             {isShowBtn && <LoadMoreBtn onClick={handleGetMoreAdverts} />}
-        </SectionCatalog>
+        </section>
     );
 };
 
