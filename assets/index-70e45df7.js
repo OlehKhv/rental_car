@@ -107,13 +107,13 @@ Error generating stack: `+i.message+`
 `,rw=rn.span`
     display: flex;
     align-items: center;
-`,ow="/rental_car/assets/sprite-1bcf27cb.svg",iw=()=>F.jsx(ew,{children:F.jsxs(tw,{children:[F.jsx(Ss,{to:"/",children:F.jsxs(rw,{children:[F.jsx(nw,{children:F.jsx("use",{href:`${ow}#icon-logo`})}),"Home"]})}),F.jsx(Ss,{to:"catalog",children:"Catalog"}),F.jsx(Ss,{to:"favorites",children:"Favorites"})]})});const lw=rn.div`
+`,ow="/rental_car/assets/sprite-0e54fda9.svg",iw=()=>F.jsx(ew,{children:F.jsxs(tw,{children:[F.jsx(Ss,{to:"/",children:F.jsxs(rw,{children:[F.jsx(nw,{children:F.jsx("use",{href:`${ow}#icon-logo`})}),"Home"]})}),F.jsx(Ss,{to:"catalog",children:"Catalog"}),F.jsx(Ss,{to:"favorites",children:"Favorites"})]})});const lw=rn.div`
     width: 100vw;
     height: 100%;
 `,sw=rn.div`
     width: 1184px;
     margin: 0 auto;
-`,uw=()=>F.jsx(lw,{children:F.jsxs(sw,{children:[F.jsx(iw,{}),F.jsx(R.Suspense,{fallback:null,children:F.jsx(L0,{})})]})}),aw=R.lazy(()=>El(()=>import("./HomePage-649a35c7.js"),[])),cw=R.lazy(()=>El(()=>import("./CatalogPage-236e01ba.js"),["assets/CatalogPage-236e01ba.js","assets/Catalog.styled-90944683.js"])),fw=R.lazy(()=>El(()=>import("./FavoritesPage-bed5be93.js"),["assets/FavoritesPage-bed5be93.js","assets/Catalog.styled-90944683.js"])),dw=R.lazy(()=>El(()=>import("./ErrorPage-8b57f17a.js"),[]));function pw(){return F.jsx(z0,{children:F.jsxs(An,{path:"/",element:F.jsx(uw,{}),children:[F.jsx(An,{index:!0,element:F.jsx(aw,{})}),F.jsx(An,{path:"/catalog",element:F.jsx(cw,{})}),F.jsx(An,{path:"/favorites",element:F.jsx(fw,{})}),F.jsx(An,{path:"*",element:F.jsx(dw,{})})]})})}var wm={exports:{}},Sm={};/**
+`,uw=()=>F.jsx(lw,{children:F.jsxs(sw,{children:[F.jsx(iw,{}),F.jsx(R.Suspense,{fallback:null,children:F.jsx(L0,{})})]})}),aw=R.lazy(()=>El(()=>import("./HomePage-e455b73d.js"),[])),cw=R.lazy(()=>El(()=>import("./CatalogPage-f93abf2a.js"),["assets/CatalogPage-f93abf2a.js","assets/Catalog.styled-a2f8435e.js"])),fw=R.lazy(()=>El(()=>import("./FavoritesPage-7f6def91.js"),["assets/FavoritesPage-7f6def91.js","assets/Catalog.styled-a2f8435e.js"])),dw=R.lazy(()=>El(()=>import("./ErrorPage-e1f93ab2.js"),[]));function pw(){return F.jsx(z0,{children:F.jsxs(An,{path:"/",element:F.jsx(uw,{}),children:[F.jsx(An,{index:!0,element:F.jsx(aw,{})}),F.jsx(An,{path:"/catalog",element:F.jsx(cw,{})}),F.jsx(An,{path:"/favorites",element:F.jsx(fw,{})}),F.jsx(An,{path:"*",element:F.jsx(dw,{})})]})})}var wm={exports:{}},Sm={};/**
  * @license React
  * use-sync-external-store-with-selector.production.min.js
  *

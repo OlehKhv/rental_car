@@ -1,4 +1,4 @@
-import{u as i,j as t,a as o}from"./index-2d2225bb.js";import{s as r,C as n,a}from"./Catalog.styled-90944683.js";const c=i.div`
+import{u as i,j as t,a as o}from"./index-70e45df7.js";import{s as r,C as n,a}from"./Catalog.styled-a2f8435e.js";const c=i.div`
     display: flex;
     justify-content: center;
     padding-top: 40px;
