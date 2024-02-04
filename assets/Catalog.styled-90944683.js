@@ -1,4 +1,4 @@
-import{u as i,r as g,j as e,h as f,c as L,a as T,i as z,k as I}from"./index-45d9feea.js";const M=i("div")`
+import{u as i,r as u,j as n,h as m,c as L,a as T,i as z,k as I}from"./index-2d2225bb.js";const M=i("div")`
     position: fixed;
     top: 0;
     left: 0;
@@ -30,44 +30,44 @@ import{u as i,r as g,j as e,h as f,c as L,a as T,i as z,k as I}from"./index-45d9
     stroke: #121417;
     width: 24px;
     height: 24px;
-`,v=i("img")`
+`,R=i("img")`
     border-radius: 14px;
     width: 461px;
     height: 248px;
     margin-bottom: 14px;
-`,R=i("p")`
+`,A=i("p")`
     font-weight: 500;
     font-size: 18px;
     line-height: 1.33333;
     color: #121417;
     margin-bottom: 8px;
-`,O=i("span")`
+`,v=i("span")`
     color: #3470ff;
 `,s=i("span")`
     margin-left: 6px;
     margin-right: 6px;
     color: rgba(18, 20, 23, 0.1);
-`,A=i("div")`
+`,D=i("div")`
     margin-bottom: 14px;
-`,c=i("p")`
+`,a=i("p")`
     font-size: 12px;
     line-height: 1.5;
     color: rgba(18, 20, 23, 0.5);
     margin-bottom: 4px;
-`,D=i("p")`
+`,O=i("p")`
     font-size: 14px;
     line-height: 1.42857;
     color: #121417;
     margin-bottom: 24px;
-`,m=i("p")`
+`,k=i("p")`
     font-weight: 500;
     font-size: 14px;
     line-height: 1.42857;
     color: #121417;
     margin-bottom: 8px;
-`,b=i("div")`
+`,w=i("div")`
     margin-bottom: 24px;
-`,r=i("p")`
+`,l=i("p")`
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -80,7 +80,7 @@ import{u as i,r as g,j as e,h as f,c as L,a as T,i as z,k as I}from"./index-45d9
     padding: 7px 14px;
     margin-right: 8px;
     margin-bottom: 8px;
-`,h=i("span")`
+`,j=i("span")`
     font-weight: 600;
     color: #3470ff;
 `,$=i("a")`
@@ -89,12 +89,12 @@ import{u as i,r as g,j as e,h as f,c as L,a as T,i as z,k as I}from"./index-45d9
     width: 168px;
     height: 44px;
     background-color: #3470ff;
-`,q=i.li`
+`,N=i.li`
     width: 274px;
     height: 450px;
     border-radius: 14px 14px 12px 12px;
     position: relative;
-`,N=i.button`
+`,Y=i.button`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,30 +109,30 @@ import{u as i,r as g,j as e,h as f,c as L,a as T,i as z,k as I}from"./index-45d9
     &:is(:hover, :focus) {
         background-color: #0b44cd;
     }
-`,y=i.span`
+`,C=i.span`
     font-weight: 600;
     font-size: 14px;
     line-height: 1.42857;
     color: #fff;
-`,V=i.div`
+`,q=i.div`
     width: 274px;
     height: 268px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 14px;
     margin-bottom: 14px;
-`,Y=i("div")`
+`,G=i("div")`
     display: flex;
     justify-content: space-between;
-`,k=i("p")`
+`,y=i("p")`
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: #121417;
     margin-bottom: 8px;
-`,G=i("span")`
+`,H=i("span")`
     color: #3470ff;
-`,H=i("button")`
+`,J=i("button")`
     padding: 0;
     position: absolute;
     top: 14px;
@@ -142,7 +142,7 @@ import{u as i,r as g,j as e,h as f,c as L,a as T,i as z,k as I}from"./index-45d9
     align-items: center;
     background: none;
     border: none;
-`,J=i("svg")`
+`,K=i("svg")`
     stroke: rgba(255, 255, 255, 0.8);
     fill: transparent;
     width: 18px;
@@ -151,7 +151,7 @@ import{u as i,r as g,j as e,h as f,c as L,a as T,i as z,k as I}from"./index-45d9
         stroke: #3470ff;
         fill: #3470ff;
     }
-`,K=i("button")`
+`,Q=i("button")`
     padding: 0;
     position: absolute;
     top: 14px;
@@ -161,7 +161,7 @@ import{u as i,r as g,j as e,h as f,c as L,a as T,i as z,k as I}from"./index-45d9
     align-items: center;
     background: none;
     border: none;
-`,Q=i("svg")`
+`,U=i("svg")`
     stroke: #3470ff;
     fill: #3470ff;
     width: 18px;
@@ -170,7 +170,8 @@ import{u as i,r as g,j as e,h as f,c as L,a as T,i as z,k as I}from"./index-45d9
         stroke: rgba(255, 255, 255, 0.8);
         fill: transparent;
     }
-`,U=({advert:n,toggleModal:o})=>{const l=t=>{t.stopPropagation()},a=n.address.split(","),d=n.rentalPrice.slice(1,n.rentalPrice.length),x=n.mileage.toLocaleString("en-IN");return g.useEffect(()=>{const t=()=>{o()};return document.addEventListener("keydown",t),()=>{document.removeEventListener("keydown",t)}},[o]),e.jsx(M,{onClick:o,children:e.jsx(B,{onClick:l,children:e.jsxs("div",{onClick:l,children:[e.jsx(P,{onClick:o,children:e.jsx(E,{children:e.jsx("use",{href:f+"#icon-close"})})}),e.jsx(v,{src:n.img}),e.jsxs(R,{children:[n.make," ",e.jsx(O,{children:n.model}),","," ",n.year]}),e.jsxs(A,{children:[e.jsxs(c,{children:[a[1],e.jsx(s,{children:"|"}),a[2],e.jsx(s,{children:"|"}),"Id: ",n.id,e.jsx(s,{children:"|"}),"Year: ",n.year,e.jsx(s,{children:"|"}),"Type: ",n.type]}),e.jsxs(c,{children:["Fuel Consumption: ",n.fuelConsumption,e.jsx(s,{children:"|"}),"Engine Size: ",n.engineSize]})]}),e.jsx(D,{children:n.description}),e.jsxs(b,{children:[e.jsx(m,{children:"Accessories and functionalities:"}),e.jsxs(c,{children:[n.accessories[0],e.jsx(s,{children:"|"}),n.accessories[1],e.jsx(s,{children:"|"}),n.accessories[2]]}),e.jsxs(c,{children:[n.functionalities[0],e.jsx(s,{children:"|"}),n.functionalities[1],e.jsx(s,{children:"|"}),n.functionalities[2]]})]}),e.jsxs(b,{children:[e.jsx(m,{children:"Rental Conditions:"}),e.jsxs("div",{children:[e.jsxs(r,{children:["Minimum age :"," ",e.jsx(h,{children:"25"})]}),e.jsx(r,{children:"Valid driver’s license"})]}),e.jsxs("div",{children:[e.jsx(r,{children:"Security deposite required"}),e.jsxs(r,{children:["Mileage:"," ",e.jsx(h,{children:x})]}),e.jsxs(r,{children:["Price: ",e.jsxs(h,{children:[d,"$"]})]})]})]}),e.jsx($,{href:"tel:+380730000000",children:e.jsx(y,{children:"Rental car"})})]})})})},W=n=>n.favorites.favorites,Z=({advert:n})=>{const o=L(),l=T(W),[a,d]=g.useState(!1),[x,t]=g.useState(()=>!!l.find(p=>p.id===n.id)),w=n.rentalPrice.slice(1,n.rentalPrice.length),u=n.address.split(","),C=n.img?n.img:n.photoLink,j=()=>{d(p=>!p)},S=()=>{o(z(n)),t(!0)},F=()=>{o(I(n.id)),t(!1)};return e.jsxs(e.Fragment,{children:[e.jsxs(q,{children:[e.jsx(V,{style:{backgroundImage:`url(${C})`}}),e.jsxs(Y,{children:[e.jsxs(k,{children:[n.make," ",e.jsx(G,{children:n.model}),","," ",n.year]}),e.jsxs(k,{children:[w,"$"]})]}),e.jsxs(c,{children:[u[1],e.jsx(s,{children:"|"}),u[2],e.jsx(s,{children:"|"}),n.rentalCompany,e.jsx(s,{children:"|"}),n.type,e.jsx(s,{children:"|"}),n.model,e.jsx(s,{children:"|"}),n.id,e.jsx(s,{children:"|"}),n.functionalities[0]]}),e.jsx(N,{onClick:j,children:e.jsx(y,{children:"Learn more"})}),x?e.jsx(K,{onClick:F,children:e.jsx(Q,{children:e.jsx("use",{href:f+"#icon-heart"})})}):e.jsx(H,{onClick:S,children:e.jsx(J,{children:e.jsx("use",{href:f+"#icon-heart"})})})]}),a&&e.jsx(U,{advert:n,toggleModal:j})]})},_=i.ul`
+`,V=({advert:e,toggleModal:o})=>{const d=r=>{r.stopPropagation()},t=e.rentalConditions.split(`
+`),p=t[0].slice(0,-2),h=t[0].slice(-2,t[0].length),c=e.address.split(","),g=e.rentalPrice.slice(1,e.rentalPrice.length),x=e.mileage.toLocaleString("en-IN");return u.useEffect(()=>{const r=()=>{o()};return document.addEventListener("keydown",r),()=>{document.removeEventListener("keydown",r)}},[o]),n.jsx(M,{onClick:o,children:n.jsx(B,{onClick:d,children:n.jsxs("div",{onClick:d,children:[n.jsx(P,{onClick:o,children:n.jsx(E,{children:n.jsx("use",{href:m+"#icon-close"})})}),n.jsx(R,{src:e.img}),n.jsxs(A,{children:[e.make," ",n.jsx(v,{children:e.model}),","," ",e.year]}),n.jsxs(D,{children:[n.jsxs(a,{children:[c[1],n.jsx(s,{children:"|"}),c[2],n.jsx(s,{children:"|"}),"Id: ",e.id,n.jsx(s,{children:"|"}),"Year: ",e.year,n.jsx(s,{children:"|"}),"Type: ",e.type]}),n.jsxs(a,{children:["Fuel Consumption: ",e.fuelConsumption,n.jsx(s,{children:"|"}),"Engine Size: ",e.engineSize]})]}),n.jsx(O,{children:e.description}),n.jsxs(w,{children:[n.jsx(k,{children:"Accessories and functionalities:"}),n.jsxs(a,{children:[e.accessories[0],n.jsx(s,{children:"|"}),e.accessories[1],n.jsx(s,{children:"|"}),e.accessories[2]]}),n.jsxs(a,{children:[e.functionalities[0],n.jsx(s,{children:"|"}),e.functionalities[1],n.jsx(s,{children:"|"}),e.functionalities[2]]})]}),n.jsxs(w,{children:[n.jsx(k,{children:"Rental Conditions:"}),n.jsxs("div",{children:[n.jsxs(l,{children:[p,n.jsx(j,{children:h})]}),n.jsx(l,{children:t[1]})]}),n.jsxs("div",{children:[n.jsx(l,{children:t[2]}),n.jsxs(l,{children:["Mileage:"," ",n.jsx(j,{children:x})]}),n.jsxs(l,{children:["Price: ",n.jsxs(j,{children:[g,"$"]})]})]})]}),n.jsx($,{href:"tel:+380730000000",children:n.jsx(C,{children:"Rental car"})})]})})})},W=e=>e.favorites.favorites,Z=({advert:e})=>{const o=L(),d=T(W),[t,p]=u.useState(!1),[h,c]=u.useState(()=>!!d.find(f=>f.id===e.id)),g=e.rentalPrice.slice(1,e.rentalPrice.length),x=e.address.split(","),r=e.img?e.img:e.photoLink,b=()=>{p(f=>!f)},F=()=>{o(z(e)),c(!0)},S=()=>{o(I(e.id)),c(!1)};return n.jsxs(n.Fragment,{children:[n.jsxs(N,{children:[n.jsx(q,{style:{backgroundImage:`url(${r})`}}),n.jsxs(G,{children:[n.jsxs(y,{children:[e.make," ",n.jsx(H,{children:e.model}),","," ",e.year]}),n.jsxs(y,{children:[g,"$"]})]}),n.jsxs(a,{children:[x[1],n.jsx(s,{children:"|"}),x[2],n.jsx(s,{children:"|"}),e.rentalCompany,n.jsx(s,{children:"|"}),e.type,n.jsx(s,{children:"|"}),e.model,n.jsx(s,{children:"|"}),e.id,n.jsx(s,{children:"|"}),e.functionalities[0]]}),n.jsx(Y,{onClick:b,children:n.jsx(C,{children:"Learn more"})}),h?n.jsx(Q,{onClick:S,children:n.jsx(U,{children:n.jsx("use",{href:m+"#icon-heart"})})}):n.jsx(J,{onClick:F,children:n.jsx(K,{children:n.jsx("use",{href:m+"#icon-heart"})})})]}),t&&n.jsx(V,{advert:e,toggleModal:b})]})},_=i.ul`
     display: flex;
     flex-wrap: wrap;
     gap: 50px 29px;
