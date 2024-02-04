@@ -1,8 +1,10 @@
 import Select from "react-select";
 import {
     CatalogForm,
+    FieldInput,
     InputFrom,
     InputTo,
+    LabelInput,
     LabelSelect,
     SearchBtnSpan,
     SearchButton,
@@ -21,10 +23,12 @@ export const Form = () => {
             display: "flex",
             alignContent: "center",
             backgroundColor: "#f7f7fb",
+            border: "none",
             width: 224,
             height: 48,
             borderRadius: 14,
             padding: "14px 14px 14px 18px",
+            marginRight: 18,
         }),
         option: (styles) => ({ ...styles, color: "red" }),
         input: (styles) => ({ ...styles }),
@@ -37,10 +41,12 @@ export const Form = () => {
             display: "flex",
             alignContent: "center",
             backgroundColor: "#f7f7fb",
+            border: "none",
             width: 125,
             height: 48,
             borderRadius: 14,
             padding: "14px 14px 14px 18px",
+            marginRight: 18,
         }),
         option: (styles) => ({ ...styles, color: "red" }),
         input: (styles) => ({ ...styles }),
@@ -72,7 +78,11 @@ export const Form = () => {
     };
 
     return (
-        <CatalogForm>
+        <CatalogForm
+            onSubmit={(e) => {
+                e.preventDefault();
+            }}
+        >
             <LabelSelect>
                 Car brand
                 <Select
@@ -91,14 +101,16 @@ export const Form = () => {
                     placeholder="To $"
                 />
             </LabelSelect>
-            <LabelSelect>
+            <LabelInput>
                 Car mileage / km
-                <InputFrom placeholder="From" />
-            </LabelSelect>
-            <InputTo placeholder="To" />
-            <SearchButton>
-                <SearchBtnSpan>Search</SearchBtnSpan>
-            </SearchButton>
+                <FieldInput>
+                    <InputFrom placeholder="From" />
+                    <InputTo placeholder="To" />
+                    <SearchButton type="submit">
+                        <SearchBtnSpan>Search</SearchBtnSpan>
+                    </SearchButton>
+                </FieldInput>
+            </LabelInput>
         </CatalogForm>
     );
 };

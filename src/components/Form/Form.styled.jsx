@@ -2,10 +2,22 @@ import styled from "styled-components";
 
 export const CatalogForm = styled.form`
     display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+`;
+
+export const FieldInput = styled.div`
+    display: flex;
 `;
 
 export const LabelSelect = styled.label`
-    color: white;
+    color: #8a8a89;
+`;
+
+export const LabelInput = styled.label`
+    display: flex;
+    flex-direction: column;
+    color: #8a8a89;
 `;
 
 export const InputFrom = styled.input`
@@ -31,6 +43,7 @@ export const InputTo = styled.input`
     font-size: 18px;
     line-height: 1.11111;
     color: #121417;
+    margin-right: 18px;
 `;
 
 export const SearchButton = styled.button`
@@ -41,6 +54,10 @@ export const SearchButton = styled.button`
     width: 136px;
     height: 48px;
     background-color: #3470ff;
+    border: none;
+    &:is(:hover, :focus) {
+        background-color: #0b44cd;
+    }
 `;
 
 export const SearchBtnSpan = styled.span`

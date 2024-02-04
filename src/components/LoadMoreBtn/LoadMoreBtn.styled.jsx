@@ -11,4 +11,7 @@ export const LoadMoreButton = styled.button`
     text-decoration: underline;
     color: #3470ff;
     background-color: transparent;
+    &:is(:hover, :focus) {
+        color: #0b44cd;
+    }
 `;

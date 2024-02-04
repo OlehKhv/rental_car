@@ -55,13 +55,16 @@ export const Modal = ({ advert, toggleModal }) => {
                     </ModalLargeText>
                     <OptionsTop>
                         <OptionsText>
-                            {address[1]} <Span>|</Span> {address[2]}{" "}
-                            <Span>|</Span> Id: {advert.id} <Span>|</Span> Year:{" "}
-                            {advert.year} <Span>|</Span> Type: {advert.type}
+                            {address[1]}
+                            <Span>|</Span>
+                            {address[2]}
+                            <Span>|</Span>Id: {advert.id}
+                            <Span>|</Span>Year: {advert.year}
+                            <Span>|</Span>Type: {advert.type}
                         </OptionsText>
                         <OptionsText>
-                            Fuel Consumption: {advert.fuelConsumption}{" "}
-                            <Span>|</Span> Engine Size: {advert.engineSize}
+                            Fuel Consumption: {advert.fuelConsumption}
+                            <Span>|</Span>Engine Size: {advert.engineSize}
                         </OptionsText>
                     </OptionsTop>
                     <DescriptionText>{advert.description}</DescriptionText>
@@ -70,13 +73,17 @@ export const Modal = ({ advert, toggleModal }) => {
                             Accessories and functionalities:
                         </DescriptionTitle>
                         <OptionsText>
-                            {advert.accessories[0]} <Span>|</Span>{" "}
-                            {advert.accessories[1]} <Span>|</Span>{" "}
+                            {advert.accessories[0]}
+                            <Span>|</Span>
+                            {advert.accessories[1]}
+                            <Span>|</Span>
                             {advert.accessories[2]}
                         </OptionsText>
                         <OptionsText>
-                            {advert.functionalities[0]} <Span>|</Span>{" "}
-                            {advert.functionalities[1]} <Span>|</Span>{" "}
+                            {advert.functionalities[0]}
+                            <Span>|</Span>
+                            {advert.functionalities[1]}
+                            <Span>|</Span>
                             {advert.functionalities[2]}
                         </OptionsText>
                     </OptionsMiddle>

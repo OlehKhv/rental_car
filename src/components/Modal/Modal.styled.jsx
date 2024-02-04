@@ -60,6 +60,8 @@ export const ModalLargeTextSpan = styled("span")`
 `;
 
 export const Span = styled("span")`
+    margin-left: 6px;
+    margin-right: 6px;
     color: rgba(18, 20, 23, 0.1);
 `;
 
