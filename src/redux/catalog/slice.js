@@ -1,6 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getAdverts, getAllAdverts, getMakesList } from "./thunks";
 import {
+    getAdverts,
+    getAdvertsByMakes,
+    getAllAdverts,
+    getMakesList,
+} from "./thunks";
+import {
+    handleGetAdvertsByMakesFulfilled,
     handleGetAdvertsFulfilled,
     handleGetAllAdvertsFulfilled,
     handleGetMakesFulfilled,
@@ -23,7 +29,11 @@ const advertsSlice = createSlice({
         builder
             .addCase(getAllAdverts.fulfilled, handleGetAllAdvertsFulfilled)
             .addCase(getAdverts.fulfilled, handleGetAdvertsFulfilled)
-            .addCase(getMakesList.fulfilled, handleGetMakesFulfilled);
+            .addCase(getMakesList.fulfilled, handleGetMakesFulfilled)
+            .addCase(
+                getAdvertsByMakes.fulfilled,
+                handleGetAdvertsByMakesFulfilled
+            );
     },
     reducers: {
         setPage(state, { payload }) {

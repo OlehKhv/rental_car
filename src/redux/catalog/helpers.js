@@ -7,6 +7,11 @@ export const handleGetAdvertsFulfilled = (state, { payload }) => {
     state.adverts = payload;
 };
 
+export const handleGetAdvertsByMakesFulfilled = (state, { payload }) => {
+    state.totalPages = Math.ceil(payload.length / state.limit);
+    state.adverts = payload;
+};
+
 export const handleGetMakesFulfilled = (state, { payload }) => {
     state.makes = payload;
 };

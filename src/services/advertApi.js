@@ -9,6 +9,13 @@ export const fetchAdverts = async (params) => {
     return data;
 };
 
+export const fetchAdvertsByMakes = async (params) => {
+    const { data } = await axios.get("/adverts", {
+        params,
+    });
+    return data;
+};
+
 export const getAllMakes = async () => {
     const { data } = await axios("/makes");
     return data;

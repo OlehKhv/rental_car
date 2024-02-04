@@ -11,12 +11,18 @@ import {
 } from "./Form.styled";
 import { useDispatch, useSelector } from "react-redux";
 import { selectMakes } from "../../redux/catalog/selectors";
-import { getAdverts } from "../../redux/catalog/thunks";
+import {
+    getAdverts,
+    getAdvertsByMakes,
+    getAllAdverts,
+} from "../../redux/catalog/thunks";
+import { setPage } from "../../redux/catalog/slice";
 
 export const Form = () => {
     const dispatch = useDispatch();
 
     const makes = useSelector(selectMakes);
+
     const stylesSelectMakes = {
         control: (styles) => ({
             ...styles,
@@ -79,6 +85,7 @@ export const Form = () => {
     const optionsMakes = makes.map((car) => {
         return { value: car, label: car };
     });
+
     const optionPrice = [
         { value: 10, label: 10 },
         { value: 20, label: 20 },
@@ -92,11 +99,13 @@ export const Form = () => {
 
     const handleChange = (selectedOption, { action }) => {
         if (action === "clear") {
+            dispatch(setPage(1));
+            dispatch(getAllAdverts());
             dispatch(getAdverts({ page: 1, limit: 12 }));
             return;
         }
         const { value } = selectedOption;
-        dispatch(getAdverts({ make: value }));
+        dispatch(getAdvertsByMakes({ make: value }));
     };
 
     return (
