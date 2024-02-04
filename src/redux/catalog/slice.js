@@ -1,9 +1,17 @@
 import { createSlice, isAnyOf } from "@reduxjs/toolkit";
-import { fetchAllAdverts } from "./thunks";
-import { handleFetchAllFulfilled } from "./helpers";
+import { getAdverts, getAllAdverts, getMakesList } from "./thunks";
+import {
+    handleGetAdvertsFulfilled,
+    handleGetAllAdvertsFulfilled,
+    handleGetMakesFulfilled,
+} from "./helpers";
 
 const advertsInitialState = {
-    items: [],
+    page: 1,
+    limit: 12,
+    totalPages: null,
+    adverts: [],
+    makes: [],
 };
 
 const advertsSlice = createSlice({
@@ -12,9 +20,17 @@ const advertsSlice = createSlice({
     initialState: advertsInitialState,
 
     extraReducers: (builder) => {
-        builder.addCase(fetchAllAdverts.fulfilled, handleFetchAllFulfilled);
+        builder
+            .addCase(getAllAdverts.fulfilled, handleGetAllAdvertsFulfilled)
+            .addCase(getAdverts.fulfilled, handleGetAdvertsFulfilled)
+            .addCase(getMakesList.fulfilled, handleGetMakesFulfilled);
+    },
+    reducers: {
+        setPage(state, { payload }) {
+            state.page = payload;
+        },
     },
 });
 
 export const advertsReducer = advertsSlice.reducer;
-
+export const { setPage } = advertsSlice.actions;

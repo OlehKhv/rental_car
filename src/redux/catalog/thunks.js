@@ -1,24 +1,35 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { getAllAdverts } from "../../services/advertApi";
+import { fetchAdverts, getAllMakes } from "../../services/advertApi";
 
-// export const fetchAllAdverts = createAsyncThunk(
-//     "adverts/fetchAll",
-//     async (_, { rejectWithValue }) => {
-//         try {
-//             return await getAllAdverts();
-//         } catch (e) {
-//             return rejectWithValue(e.message);
-//         }
-//     }
-// );
+export const getAllAdverts = createAsyncThunk(
+    "adverts/getAllAdverts",
+    async (_, { rejectWithValue }) => {
+        try {
+            return await fetchAdverts();
+        } catch (e) {
+            return rejectWithValue(e.message);
+        }
+    }
+);
 
-export const fetchAllAdverts = createAsyncThunk(
-    "adverts/fetchAll",
+export const getAdverts = createAsyncThunk(
+    "adverts/getAdverts",
     async (params, { rejectWithValue }) => {
         try {
-            return await getAllAdverts(params);
+            return await fetchAdverts(params);
         } catch (e) {
-            return console.log(e);
+            return rejectWithValue(e.message);
+        }
+    }
+);
+
+export const getMakesList = createAsyncThunk(
+    "adverts/getMakesList",
+    async (_, { rejectWithValue }) => {
+        try {
+            return await getAllMakes();
+        } catch (e) {
+            return rejectWithValue(e.message);
         }
     }
 );

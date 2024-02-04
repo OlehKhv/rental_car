@@ -1,9 +1,7 @@
 import styled from "styled-components";
 
-export const CatalogCards = styled.ul`
+export const CardsList = styled.ul`
     display: flex;
     flex-wrap: wrap;
     gap: 50px 29px;
 `;
-
-

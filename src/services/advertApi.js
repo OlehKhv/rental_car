@@ -1,12 +1,10 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "https://65bbccd452189914b5bd184f.mockapi.io/api";
-axios.defaults.headers.get["Content-Type"] = "application/json";
+axios.defaults.baseURL = "https://65be29a8dcfcce42a6f1f447.mockapi.io/api";
 
-export const getAllAdverts = async ({ page, limit }) => {
-    // const params = { page, limit };
-    const { data } = await axios.get("/advert", {
-        params: { page, limit },
+export const fetchAdverts = async (params) => {
+    const { data } = await axios.get("/adverts", {
+        params,
     });
     return data;
 };
